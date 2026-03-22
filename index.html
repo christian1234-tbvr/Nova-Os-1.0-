@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net"></script>
+    <style>
+        body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        #qml-container { width: 360px; height: 640px; border: 2px solid #333; background: #111; }
+    </style>
+</head>
+<body>
+    <div id="qml-container"></div>
+    <script>
+        var engine = new QMLWeb.Engine(document.getElementById('qml-container'));
+        engine.loadFile('LockScreen.qml');
+        engine.start();
+    </script>
+</body>
+</html>
